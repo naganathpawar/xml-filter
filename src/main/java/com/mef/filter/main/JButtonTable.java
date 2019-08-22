@@ -1,9 +1,6 @@
 package com.mef.filter.main;
-
-import com.mef.filter.main.config.AppProperties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import java.awt.Component;
 import java.awt.Desktop;
@@ -22,52 +19,54 @@ import javax.swing.table.TableCellRenderer;
  * @author Naganath_Pawar
  *
  */
-public class JButtonTable implements TableCellRenderer {
 
+class JButtonTable  implements TableCellRenderer {
+
+	/**
+	 *
+	 */
 	private static final long serialVersionUID = 1L;
-
-	private JButton button;
-	public JButtonTable(String text) {
-		button = new JButton(text);
+	JButton jButton=new JButton();
+	public JButtonTable() {
+		jButton.setOpaque(true);
 	}
 
-	public JButton getButton() {
-		return button;
-	}
 
-	public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus,
-			int row, int column) {
+	public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus,int row, int column) {
 		if (isSelected) {
-			button.setForeground(table.getSelectionForeground());
-			button.setBackground(table.getSelectionBackground());
+			jButton.setForeground(table.getSelectionForeground());
+			jButton.setBackground(table.getSelectionBackground());
 		} else {
-			button.setForeground(table.getForeground());
-			button.setBackground(UIManager.getColor("Button.background"));
+			jButton.setForeground(table.getForeground());
+			jButton.setBackground(UIManager.getColor("Button.background"));
 		}
-		button.setText((value == null) ? "" : value.toString());
-		return button;
+		jButton.setText((value == null) ? "" : value.toString());
+		return jButton;
 	}
 }
 
+/**
+ * @version 1.0 11/09/98
+ */
+
 class ButtonEditor extends DefaultCellEditor {
-
-	@Autowired
-	transient AppProperties appProperties;
-
+	/**
+	 *
+	 */
+	private static final long serialVersionUID = 1L;
+	public static final Logger logger = LoggerFactory.getLogger(ButtonEditor.class);
 	protected JButton button;
 
 	private String label;
 
 	private boolean isPushed;
 
-	public static final Logger logger = LoggerFactory.getLogger(ButtonEditor.class);
-
 	public ButtonEditor(JCheckBox checkBox) {
 		super(checkBox);
 		button = new JButton();
 		button.setOpaque(true);
 		button.addActionListener((ActionEvent e) ->
-			fireEditingStopped()
+				fireEditingStopped()
 		);
 	}
 
@@ -90,27 +89,25 @@ class ButtonEditor extends DefaultCellEditor {
 	public Object getCellEditorValue() {
 		if (isPushed) {
 			try {
-				int choice = JOptionPane.showOptionDialog(null, "Do you want to open this file", appProperties.getDownload(),
+				int choice = JOptionPane.showOptionDialog(null, "Do you want to open this file", "Download",
 						JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, null, null, null);
-
-				// interpret the user's choice
 				if (choice == JOptionPane.YES_OPTION) {
 					File myFile = new File(label);
 					Desktop.getDesktop().open(myFile);
 				}
 			} catch (Exception e) {
-				logger.error("getCellEditorValue",e);
+				logger.error("getCellEditorValue", e);
 			}
 		}
 		isPushed = false;
 		return label;
 	}
-
-	@Override
+@Override
 	public boolean stopCellEditing() {
 		isPushed = false;
 		return super.stopCellEditing();
 	}
+
 
 }
 class FrameListener extends WindowAdapter {

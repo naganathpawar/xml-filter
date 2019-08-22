@@ -209,7 +209,7 @@ public class SearchFrame{
 						row[1] = fileList.get(i).getPath();
 						model.addRow(row);
 
-						table.getColumn(appProperties.getDownload()).setCellRenderer(new JButtonTable(""));
+						table.getColumn(appProperties.getDownload()).setCellRenderer(new JButtonTable());
 						table.getColumn(appProperties.getDownload()).setCellEditor(new ButtonEditor(new JCheckBox()));
 					}
 					lblCount.setText(fileList.size() + "");

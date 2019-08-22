@@ -248,17 +248,21 @@ public class ReadXMLImpl implements ReadXML {
 
 		List<FileDetails> files = new ArrayList<>();
 		appProperties.getInputType().forEach(v -> {
-
+			String xmlFileName;
+			if(v.contains("commercialProductList"))
+				xmlFileName="commercialProduct";
+			else
+				xmlFileName="commercialBundle";
 			Node node = document.selectSingleNode(v+appProperties.getContain()+id+ "')]");
 			if (node != null && node.hasContent()) {
 				try {
-					commonUtility.createFile(folderName.concat("/").concat(id).concat(".xml"), node.asXML());
+					commonUtility.createFile(folderName.concat("/").concat(xmlFileName+"-"+id).concat(".xml"), node.asXML());
 				} catch (IOException e) {
 					logger.error("getFileDetails",e);
 				}
-				com.mef.filter.main.model.FileDetails file = new com.mef.filter.main.model.FileDetails();
-				file.setName(id + ".xml");
-				file.setPath(folderName .concat("/" ).concat(id.concat(".xml")));
+				FileDetails file = new com.mef.filter.main.model.FileDetails();
+				file.setName(xmlFileName+"-"+id + ".xml");
+				file.setPath(folderName .concat("/" ).concat(xmlFileName+"-"+id.concat(".xml")));
 				file.setFolderPath(folderName);
 				files.add(file);
 			}

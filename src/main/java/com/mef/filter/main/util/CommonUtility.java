@@ -7,7 +7,7 @@ import java.io.PrintWriter;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Stream;
@@ -85,12 +85,9 @@ public String getPath(String filePath) {
  * @return
  */
 public List<String> getIds(String files) {
-	List<String> filesList = new ArrayList<>();
 	String[] str = files.split(",");
-	for (String s : str) {
-		filesList.add(s);
-	}
-	return filesList;
+
+	return Arrays.asList(str);
 }
 	void deleteDirectoryStream(Path path) {
 		Stream<Path> walk =null;
