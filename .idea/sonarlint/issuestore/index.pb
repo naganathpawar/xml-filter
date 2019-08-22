@@ -31,8 +31,6 @@ e
 5src/main/java/com/mef/filter/main/CanonicalFrame.java,b/c/bc2b01887807953c90bfeec1678eebe4d93ceaaa
 W
 'build/resources/main/default.properties,d/0/d02859521e32fbe00ca09db53af25b18e1985633
-[
-+.gradle/buildOutputCleanup/cache.properties,f/0/f0ce9208a20ebd9d1f763074c5870c3f31ef115a
 7
 pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
 8

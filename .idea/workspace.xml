@@ -6,12 +6,29 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c27ac4bc-3145-4e70-a08f-a2930db01d9b" name="Default Changelist" comment="" />
+    <list default="true" id="c27ac4bc-3145-4e70-a08f-a2930db01d9b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/e/de8fdba50b328639616a0d6f7224052ee5602ab7" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/e/de8fdba50b328639616a0d6f7224052ee5602ab7" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/0/f0ce9208a20ebd9d1f763074c5870c3f31ef115a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mef/filter/main/JButtonTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mef/filter/main/JButtonTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mef/filter/main/SearchFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mef/filter/main/SearchFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mef/filter/main/service/ReadXMLImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mef/filter/main/service/ReadXMLImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mef/filter/main/util/CommonUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mef/filter/main/util/CommonUtility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mef/filter/main/ButtonEditor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mef/filter/main/ButtonEditor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mef/filter/main/FrameListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mef/filter/main/FrameListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mef/filter/main/JButtonTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mef/filter/main/JButtonTable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mef/filter/main/SearchFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mef/filter/main/SearchFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mef/filter/main/service/ReadXMLImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mef/filter/main/service/ReadXMLImpl.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="MEF-Filter" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -22,6 +39,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -30,11 +50,13 @@
     </option>
   </component>
   <component name="ProjectId" id="1P93O4ILrDUnELMDRBQvZTKV3yO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="GenerateAntBuildDialog.backupFiles" value="true" />
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="mef-filter" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SONARLINT_ANALYSIS_RESULTS_SPLIT_PROPORTION" value="0.49793217" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
@@ -98,6 +120,19 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -113,7 +148,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/mef/filter/main/util/CommonUtility.java</url>
-          <line>109</line>
+          <line>106</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -128,7 +163,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/mef/filter/main/util/CommonUtility.java</url>
-          <line>95</line>
+          <line>92</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
