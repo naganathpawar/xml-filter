@@ -31,18 +31,18 @@ public class FileReaderImpl implements FileReader {
 	 */
 	@Override
 	public String createCSVFileForDevice(String path, String deviceId) {
-		String csvPath="";
+		String csvPath = "";
 		try {
-			List<String[]> dataList = new ArrayList();
-			dataList.add(appProperties.getDeviceHeader().toArray(new String[appProperties.getDeviceHeader().size()]));
-			readXML.getDeviceDataByDeviceId(path, deviceId).forEach(deviceObj->
-				dataList.add(new String[] { deviceObj.getId(),deviceObj.getPlanId(),deviceObj.getPriceGross(),deviceObj.getPriceNet(),deviceObj.getPriceVAT(),deviceObj.getRecurringCharge()})
+			List <String[]> dataList = new ArrayList ( );
+			dataList.add ( appProperties.getDeviceHeader ( ).toArray ( new String[ appProperties.getDeviceHeader ( ).size ( ) ] ) );
+			readXML.getDeviceDataByDeviceId ( path , deviceId ).forEach ( deviceObj ->
+					dataList.add ( new String[] { deviceObj.getId ( ) , deviceObj.getPlanId ( ) , deviceObj.getPriceGross ( ) , deviceObj.getPriceNet ( ) , deviceObj.getPriceVAT ( ) , deviceObj.getRecurringCharge ( ) } )
 			);
-			csvPath=createCSV.createCSV(commonUtility.getPath(path), appProperties.getDevicePath());
-			createCSV.writeSCV(dataList, csvPath);
-			
-		} catch (Exception e) {
-			logger.error("ERROR:::createCSVFileForDevice::::", e);
+			csvPath = createCSV.createCSV ( commonUtility.getPath ( path ) , appProperties.getDevicePath ( ) );
+			createCSV.writeSCV ( dataList , csvPath );
+
+		} catch ( Exception e ) {
+			logger.error ( "ERROR:::createCSVFileForDevice::::" , e );
 		}
 		return csvPath;
 	}
@@ -55,17 +55,17 @@ public class FileReaderImpl implements FileReader {
 	public String createCSVFileForPlan(String path, String planIds) {
 		String csvFile = null;
 		try {
-			List<String[]> dataList = new ArrayList();
-			dataList.add(appProperties.getPlanHeader().toArray(new String[appProperties.getPlanHeader().size()]));
-			readXML.getProductDataForCSV(path, planIds).forEach(productObj->
-				dataList.add(
-						new String[] {
-				productObj.getId(),productObj.getProductLines(),productObj.getBoxPrice(),productObj.getProductAvailability(),productObj.getBundleAvailability()})
+			List < String[] > dataList = new ArrayList ( );
+			dataList.add ( appProperties.getPlanHeader ( ).toArray ( new String[ appProperties.getPlanHeader ( ).size ( ) ] ) );
+			readXML.getProductDataForCSV ( path , planIds ).forEach ( productObj ->
+					dataList.add (
+							new String[] {
+									productObj.getId ( ) , productObj.getProductLines ( ) , productObj.getBoxPrice ( ) , productObj.getProductAvailability ( ) , productObj.getBundleAvailability ( ) } )
 			);
-			csvFile = createCSV.createCSV(commonUtility.getPath(path), appProperties.getPlanPath());
-			createCSV.writeSCV(dataList, csvFile);
-		} catch (Exception ex) {
-			logger.error("ERROR:::createCSVFileForPlan::::", ex);
+			csvFile = createCSV.createCSV ( commonUtility.getPath ( path ) , appProperties.getPlanPath ( ) );
+			createCSV.writeSCV ( dataList , csvFile );
+		} catch ( Exception ex ) {
+			logger.error ( "ERROR:::createCSVFileForPlan::::" , ex );
 		}
 		return csvFile;
 	}
