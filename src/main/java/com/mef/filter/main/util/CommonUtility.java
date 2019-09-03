@@ -90,20 +90,20 @@ public List<String> getIds(String files) {
 	return Arrays.asList(str);
 }
 	void deleteDirectoryStream(Path path) {
-		Stream<Path> walk =null;
+		Stream<Path> pathStream =null;
 		try {
-			walk= Files.walk(path);
-			walk.sorted(Comparator.reverseOrder())
+			pathStream= Files.walk(path);
+			pathStream.sorted(Comparator.reverseOrder())
 					.map(Path::toFile)
 					.forEach(File::delete);
 		}catch (IOException e){
 			logger.error("deleteDirectoryStream",e);
 		}finally {
-			walk.close();
+			pathStream.close();
 		}
 	}
 
-	public String getSelectionType(String value){
+	public String getSelectionType(@NotNull String value){
 	if (value.equalsIgnoreCase(appProperties.getCommercialBundle() ))
 		return appProperties.getInputType().get(0);
 		else
