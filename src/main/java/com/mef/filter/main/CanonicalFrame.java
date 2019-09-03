@@ -125,18 +125,18 @@ public class CanonicalFrame {
 		jPanel.add(btnUpdate);
 		btnUpdate.addActionListener((ActionEvent e) -> {
 			try {
-				if (!textPath.getText().isEmpty() && !textId.getText().isEmpty() && !txtArea.getText().isEmpty()) {
-					label.setText("Wait... It's Updating Details into Canonical.");
-					JOptionPane.showMessageDialog(frame, "Wait... It's Updating Details into Canonical.");
-					readXML.replaceNode(txtArea.getText(), textPath.getText(), textId.getText(),
-							typeList.getSelectedItem().toString());
-					JOptionPane.showMessageDialog(frame, "Details Updated successfully");
-					label.setText("Details Updated");
+				if ( ! textPath.getText ( ).isEmpty ( ) && ! textId.getText ( ).isEmpty ( ) && ! txtArea.getText ( ).isEmpty ( ) ) {
+					label.setText ( "Wait... It's Updating Details into Canonical." );
+					JOptionPane.showMessageDialog ( frame , "Wait... It's Updating Details into Canonical." );
+					readXML.replaceNode ( txtArea.getText ( ) , textPath.getText ( ) , textId.getText ( ) ,
+							typeList.getSelectedItem ( ).toString ( ) );
+					JOptionPane.showMessageDialog ( frame , "Details Updated successfully" );
+					label.setText ( "Details Updated" );
 				} else {
-					JOptionPane.showMessageDialog(frame, "Please Select File and Enter Id");
+					JOptionPane.showMessageDialog ( frame , "Please Select File and Enter Id" );
 				}
-			} catch (Exception ex) {
-				logger.error("ERROR IN: createMEFModifyForm ",ex);
+			} catch ( Exception ex ) {
+				logger.error ( "ERROR IN: createMEFModifyForm " , ex );
 			}
 		});
 
@@ -170,21 +170,22 @@ class ImagePanel extends JPanel {
 
 	private transient Image img;
 
-	public ImagePanel(String img) {
-		this(new ImageIcon(img).getImage());
+	public ImagePanel ( String img ) {
+		this ( new ImageIcon ( img ).getImage ( ) );
 	}
 
-	public ImagePanel(Image img) {
+	public ImagePanel ( Image img ) {
 		this.img = img;
-		Dimension size = new Dimension(400, 300);
-		setPreferredSize(size);
-		setMinimumSize(size);
-		setMaximumSize(size);
-		setSize(size);
-		setLayout(null);
+		Dimension size = new Dimension ( 400 , 300 );
+		setPreferredSize ( size );
+		setMinimumSize ( size );
+		setMaximumSize ( size );
+		setSize ( size );
+		setLayout ( null );
 	}
+
 	@Override
-	public void paintComponent(Graphics g) {
-		g.drawImage(img, 0, 0, getWidth(), getHeight(), this);
+	public void paintComponent ( Graphics g ) {
+		g.drawImage ( img , 0 , 0 , getWidth ( ) , getHeight ( ) , this );
 	}
 }
