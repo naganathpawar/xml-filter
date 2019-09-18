@@ -1,5 +1,7 @@
 package com.mef.filter.main.config;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 import java.util.ArrayList;
@@ -7,112 +9,42 @@ import java.util.List;
 
 @ConfigurationProperties(prefix = "app")
 public class AppProperties {
+    @Getter
+    @Setter
     private String planPath;
+    @Getter
+    @Setter
     private String devicePath;
+    @Getter
+    @Setter
     private String basePath;
+    @Getter
+    @Setter
     private String contain;
+    @Getter
+    @Setter
     private String validateMSG;
+    @Getter
+    @Setter
     private String csvCreatingMSG;
+    @Getter
+    @Setter
     private String download;
+    @Getter
+    @Setter
     private String commercialBundle;
+    @Getter
+    @Setter
     private List<String> planHeader=new ArrayList();
+    @Getter
+    @Setter
     private List<String> deviceHeader=new ArrayList();
+    @Getter
+    @Setter
     private List<String> planDetails=new ArrayList();
+    @Getter
+    @Setter
     private List<String> inputType=new ArrayList();
 
-    public String getPlanPath() {
-        return planPath;
-    }
 
-    public void setPlanPath(String planPath) {
-        this.planPath = planPath;
-    }
-
-    public String getDevicePath() {
-        return devicePath;
-    }
-
-    public void setDevicePath(String devicePath) {
-        this.devicePath = devicePath;
-    }
-
-    public String getBasePath() {
-        return basePath;
-    }
-
-    public void setBasePath(String basePath) {
-        this.basePath = basePath;
-    }
-
-    public String getContain() {
-        return contain;
-    }
-
-    public void setContain(String contain) {
-        this.contain = contain;
-    }
-
-    public String getValidateMSG() {
-        return validateMSG;
-    }
-
-    public void setValidateMSG(String validateMSG) {
-        this.validateMSG = validateMSG;
-    }
-
-    public String getCsvCreatingMSG() {
-        return csvCreatingMSG;
-    }
-
-    public void setCsvCreatingMSG(String csvCreatingMSG) {
-        this.csvCreatingMSG = csvCreatingMSG;
-    }
-
-    public String getDownload() {
-        return download;
-    }
-
-    public void setDownload(String download) {
-        this.download = download;
-    }
-
-    public String getCommercialBundle() {
-        return commercialBundle;
-    }
-
-    public void setCommercialBundle(String commercialBundle) {
-        this.commercialBundle = commercialBundle;
-    }
-
-    public List<String> getPlanHeader() {
-        return planHeader;
-    }
-
-    public void setPlanHeader(List<String> planHeader) {
-        this.planHeader = planHeader;
-    }
-
-    public List<String> getDeviceHeader() {
-        return deviceHeader;
-    }
-
-    public void setDeviceHeader(List<String> deviceHeader) {
-        this.deviceHeader = deviceHeader;
-    }
-
-    public List<String> getPlanDetails() {
-        return planDetails;
-    }
-
-    public void setPlanDetails(List<String> planDetails) {
-        this.planDetails = planDetails;
-    }
-
-    public List<String> getInputType() {
-        return inputType;
-    }
-
-    public void setInputType(List<String> inputType) {
-        this.inputType = inputType;
-    }
 }
