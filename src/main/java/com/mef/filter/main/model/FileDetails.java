@@ -1,5 +1,8 @@
 package com.mef.filter.main.model;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.Objects;
 
 /**
@@ -7,34 +10,15 @@ import java.util.Objects;
  *
  */
 public class FileDetails {
+	@Getter
+	@Setter
 	private String name;
+	@Getter
+	@Setter
 	private String path;
+	@Getter
+	@Setter
 	private String folderPath;
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public String getPath() {
-		return path;
-	}
-
-	public void setPath(String path) {
-		this.path = path;
-	}
-	
-
-	public String getFolderPath() {
-		return folderPath;
-	}
-
-	public void setFolderPath(String folderPath) {
-		this.folderPath = folderPath;
-	}
 
 	@Override
 	public boolean equals(Object o) {
