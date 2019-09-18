@@ -192,39 +192,45 @@ public class SearchFrame{
 		}
 	}
 
-	private void searchBundles(){
-		btnAdd.addActionListener((ActionEvent e) -> {
+	/**
+	 *
+	 */
+	private void searchBundles() {
+		btnAdd.addActionListener ( ( ActionEvent e ) -> {
 
 			try {
-				if (textPath.getText() != null && !textPath.getText().isEmpty() && textId.getText() != null
-						&& !textId.getText().isEmpty()) {
-					label.setText("Wait... It's Fetching Data From Canonical .");
-					model.setRowCount(0);
+				if ( textPath.getText ( ) != null && ! textPath.getText ( ).isEmpty ( ) && textId.getText ( ) != null
+						&& ! textId.getText ( ).isEmpty ( ) ) {
+					label.setText ( "Wait... It's Fetching Data From Canonical ." );
+					model.setRowCount ( 0 );
 
-					JOptionPane.showMessageDialog(frame,  "Wait... It's Updating Details into Canonical ");
-					List<FileDetails> fileList = readXML.createAndGetFileByIdFromCanonical(textPath.getText(),
-							textId.getText());
-					for (int i = 0; i < fileList.size(); i++) {
-						row[0] = fileList.get(i).getName();
-						row[1] = fileList.get(i).getPath();
-						model.addRow(row);
+					JOptionPane.showMessageDialog ( frame , "Wait... It's Updating Details into Canonical " );
+					List < FileDetails > fileList = readXML.createAndGetFileByIdFromCanonical ( textPath.getText ( ) ,
+							textId.getText ( ) );
+					for ( int i = 0 ; i < fileList.size ( ) ; i++ ) {
+						row[ 0 ] = fileList.get ( i ).getName ( );
+						row[ 1 ] = fileList.get ( i ).getPath ( );
+						model.addRow ( row );
 
-						table.getColumn(appProperties.getDownload()).setCellRenderer(new JButtonTable());
-						table.getColumn(appProperties.getDownload()).setCellEditor(new ButtonEditor(new JCheckBox()));
+						table.getColumn ( appProperties.getDownload ( ) ).setCellRenderer ( new JButtonTable ( ) );
+						table.getColumn ( appProperties.getDownload ( ) ).setCellEditor ( new ButtonEditor ( new JCheckBox ( ) ) );
 					}
-					lblCount.setText(fileList.size() + "");
-					label.setText("");
+					lblCount.setText ( fileList.size ( ) + "" );
+					label.setText ( "" );
 				} else {
-					JOptionPane.showMessageDialog(frame, appProperties.getValidateMSG());
+					JOptionPane.showMessageDialog ( frame , appProperties.getValidateMSG ( ) );
 				}
-			} catch (Exception ex) {
-				JOptionPane.showInputDialog(ex);
+			} catch ( Exception ex ) {
+				JOptionPane.showInputDialog ( ex );
 			}
 
-		});
+		} );
 	}
 
-	private void createBundleCSV(){
+	/**
+	 *
+	 */
+	private void createBundleCSV() {
 		btnCsv.addActionListener((ActionEvent e) -> {
 			try {
 				if (textPath.getText() != null && !textPath.getText().isEmpty() && textId.getText() != null
@@ -242,6 +248,9 @@ public class SearchFrame{
 		});
 	}
 
+	/**
+	 *
+	 */
 	private void createDeviceCSV(){
 		btnDeviceCsv.addActionListener((ActionEvent e) -> {
 			try {
@@ -261,16 +270,23 @@ public class SearchFrame{
 		});
 	}
 
-	private void browseFile(){
-		btnBrowse.addActionListener((ActionEvent e) -> {
-			JFileChooser fileChooser = new JFileChooser();
-			fileChooser.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
-			fileChooser.setAcceptAllFileFilterUsed(false);
-			int rVal = fileChooser.showOpenDialog(null);
-			if (rVal == JFileChooser.APPROVE_OPTION) {
-				textPath.setText(fileChooser.getSelectedFile().toString());
-			}
-		});
+	/**
+	 *
+	 */
+	private void browseFile() {
+		btnBrowse.addActionListener( this::actionPerformed );
 	}
 
+	/**
+	 * @param e
+	 */
+	private void actionPerformed ( ActionEvent e ) {
+		JFileChooser fileChooser = new JFileChooser ( );
+		fileChooser.setFileSelectionMode ( JFileChooser.FILES_AND_DIRECTORIES );
+		fileChooser.setAcceptAllFileFilterUsed ( false );
+		int rVal = fileChooser.showOpenDialog ( null );
+		if ( rVal == JFileChooser.APPROVE_OPTION ) {
+			textPath.setText ( fileChooser.getSelectedFile ( ).toString ( ) );
+		}
+	}
 }
