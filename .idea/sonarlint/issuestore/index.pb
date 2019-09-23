@@ -7,8 +7,6 @@ h
 8src/main/java/com/mef/filter/main/model/FileDetails.java,c/b/cb1caa21bf03b6a9b30e6eeb989bd88ba51566ae
 k
 ;src/main/java/com/mef/filter/main/model/ProductDetails.java,8/c/8c6b4bfac606c1bf408425d3b23b590b9c1e069b
-n
->src/main/java/com/mef/filter/main/config/ConfigProperties.java,8/d/8d23fef971494cca977430ffff5d9858a5d220dc
 f
 6src/main/java/com/mef/filter/main/service/ReadXML.java,4/f/4f6abff16ebe80f070a217592726fe8e89c356dc
 h
@@ -59,3 +57,5 @@ Y
 )src/main/resources/application.properties,0/6/06f65155ec73600b9fc5c4dc2883d4bb84d8e284
 U
 %target/classes/application.properties,b/b/bb173f9557479135e0f1bcd9c6c5f7b4ae5f77e8
+f
+6src/test/java/com/mef/filter/main/SearchFrameTest.java,b/e/be47668351869157ffd9f822b30d892037d744f8

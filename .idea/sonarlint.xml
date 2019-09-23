@@ -4,6 +4,8 @@
     <option name="fileExclusions">
       <list>
         <option value="FILE:target/MEF-Filter.jar" />
+        <option value="DIRECTORY:src/main/java" />
+        <option value="FILE:src/test/java/com/mef/filter/main/service/CreateCSVImplTest.java" />
       </list>
     </option>
   </component>

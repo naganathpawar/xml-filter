@@ -1,14 +1,13 @@
 package com.mef.filter.main.service;
 
-import java.io.IOException;
-import java.util.List;
-
+import com.mef.filter.main.model.DevicePrice;
+import com.mef.filter.main.model.ProductDetails;
 import org.dom4j.DocumentException;
 import org.dom4j.Element;
 import org.springframework.stereotype.Repository;
 
-import com.mef.filter.main.model.DevicePrice;
-import com.mef.filter.main.model.ProductDetails;
+import java.io.IOException;
+import java.util.List;
 
 /**
  * @author naganathpawar

@@ -6,26 +6,55 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c27ac4bc-3145-4e70-a08f-a2930db01d9b" name="Default Changelist" comment="">
+    <list default="true" id="c27ac4bc-3145-4e70-a08f-a2930db01d9b" name="Default Changelist" comment="Test Class">
+      <change afterPath="$PROJECT_DIR$/MEF-Filter.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/mef/filter/main/SearchFrameTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint-state.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint-state.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/d/8d23fef971494cca977430ffff5d9858a5d220dc" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/e/de8fdba50b328639616a0d6f7224052ee5602ab7" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/e/de8fdba50b328639616a0d6f7224052ee5602ab7" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/0/f0ce9208a20ebd9d1f763074c5870c3f31ef115a" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mef/filter/main/CanonicalFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mef/filter/main/CanonicalFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mef/filter/main/JButtonTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mef/filter/main/JButtonTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mef/filter/main/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mef/filter/main/MainFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mef/filter/main/SearchFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mef/filter/main/SearchFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mef/filter/main/config/ConfigProperties.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mef/filter/main/service/CreateCSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mef/filter/main/service/CreateCSV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mef/filter/main/service/CreateCSVImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mef/filter/main/service/CreateCSVImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mef/filter/main/service/FileReaderImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mef/filter/main/service/FileReaderImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mef/filter/main/service/ReadXML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mef/filter/main/service/ReadXML.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mef/filter/main/service/ReadXMLImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mef/filter/main/service/ReadXMLImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mef/filter/main/util/CommonUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mef/filter/main/util/CommonUtility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mef/filter/main/service/CreateCSVImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mef/filter/main/ButtonEditor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mef/filter/main/ButtonEditor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mef/filter/main/CanonicalFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mef/filter/main/CanonicalFrame.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mef/filter/main/FrameListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mef/filter/main/FrameListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mef/filter/main/ImagePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mef/filter/main/ImagePanel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mef/filter/main/JButtonTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mef/filter/main/JButtonTable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mef/filter/main/MainFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mef/filter/main/MainFrame.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mef/filter/main/SearchFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mef/filter/main/SearchFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mef/filter/main/config/AppProperties.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mef/filter/main/config/AppProperties.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mef/filter/main/config/ConfigProperties.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mef/filter/main/model/DevicePrice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mef/filter/main/model/DevicePrice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mef/filter/main/model/FileDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mef/filter/main/model/FileDetails.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mef/filter/main/model/ProductDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mef/filter/main/model/ProductDetails.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mef/filter/main/service/CreateCSVImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mef/filter/main/service/CreateCSVImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mef/filter/main/service/FileReaderImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mef/filter/main/service/FileReaderImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mef/filter/main/service/ReadXMLImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mef/filter/main/service/ReadXMLImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mef/filter/main/util/CommonUtility.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mef/filter/main/util/CommonUtility.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myFlattenPackages" value="true" />
+    <option name="myElementSize" value="181" />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="MEF-Filter" />
@@ -58,6 +87,7 @@
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="mef-filter" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SONARLINT_ANALYSIS_RESULTS_SPLIT_PROPORTION" value="0.49793217" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/target/classes/com/mef/filter/main" />
@@ -67,11 +97,12 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="reference.idesettings.emmet" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.mef.filter.main" />
+      <recent name="com.mef.filter.main.service" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -92,7 +123,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.SearchFrameTest">
     <configuration name="Launcher" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mef.filter.main.Launcher" />
       <module name="MEF-Filter" />
@@ -106,6 +137,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CreateCSVImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MEF-Filter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mef.filter.main.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mef.filter.main.service" />
+      <option name="MAIN_CLASS_NAME" value="com.mef.filter.main.service.CreateCSVImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchFrameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MEF-Filter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mef.filter.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mef.filter.main" />
+      <option name="MAIN_CLASS_NAME" value="com.mef.filter.main.SearchFrameTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SearchFrameTest" />
+        <item itemvalue="JUnit.CreateCSVImplTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -118,6 +185,70 @@
       <option name="presentableId" value="Default" />
       <updated>1565272449540</updated>
     </task>
+    <task id="LOCAL-00001" summary="Test Class">
+      <created>1567002800843</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1567002800843</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Test Class">
+      <created>1567502380188</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1567502380188</updated>
+    </task>
+    <task id="LOCAL-00003" summary="code style">
+      <created>1567504381648</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1567504381648</updated>
+    </task>
+    <task id="LOCAL-00004" summary="parameter name changes">
+      <created>1567504433623</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1567504433623</updated>
+    </task>
+    <task id="LOCAL-00005" summary="code coverage">
+      <created>1567524456347</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1567524456347</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Test Class">
+      <created>1567524472743</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1567524472743</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Test Class">
+      <created>1568801662884</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1568801662884</updated>
+    </task>
+    <task id="LOCAL-00008" summary="@Getter&#10;    @Setter">
+      <created>1568804254537</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1568804254537</updated>
+    </task>
+    <task id="LOCAL-00009" summary="@Getter&#10;    @Setter">
+      <created>1568804268961</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1568804268961</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -133,44 +264,35 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="code style" />
+    <MESSAGE value="parameter name changes" />
+    <MESSAGE value="code coverage" />
+    <MESSAGE value="Test Class" />
+    <MESSAGE value="@Getter&#10;    @Setter" />
+    <option name="LAST_COMMIT_MESSAGE" value="@Getter&#10;    @Setter" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/mef/filter/main/service/CreateCSVImpl.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mef/filter/main/service/CreateCSVImpl.java</url>
-          <line>33</line>
+          <line>32</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mef/filter/main/util/CommonUtility.java</url>
-          <line>106</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mef/filter/main/util/CommonUtility.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mef/filter/main/util/CommonUtility.java</url>
-          <line>59</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mef/filter/main/util/CommonUtility.java</url>
-          <line>92</line>
-          <option name="timeStamp" value="13" />
+          <url>file://$PROJECT_DIR$/src/test/java/com/mef/filter/main/SearchFrameTest.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/MEF_Filter$Launcher.ic" NAME="Launcher Coverage Results" MODIFIED="1566310930972" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/MEF_Filter$Launcher.ic" NAME="Launcher Coverage Results" MODIFIED="1568892389341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.mef.filter.main.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/MEF_Filter$SearchFrameTest.ic" NAME="SearchFrameTest Coverage Results" MODIFIED="1568891961265" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.mef.filter.main.*</FILTER>
     </SUITE>
   </component>
