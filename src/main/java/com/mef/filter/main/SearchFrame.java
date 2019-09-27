@@ -192,7 +192,7 @@ public class SearchFrame{
 					label.setText ( "Wait... It's Fetching Data From Canonical ." );
 					model.setRowCount ( 0 );
 
-					JOptionPane.showMessageDialog ( frame , "Wait... It's Updating Details into Canonical " );
+					JOptionPane.showMessageDialog ( frame , "Do you want continue?. " );
 					List < FileDetails > fileList = readXML.createAndGetFileByIdFromCanonical ( textPath.getText ( ) ,
 							textId.getText ( ) );
 					for ( int i = 0 ; i < fileList.size ( ) ; i++ ) {
