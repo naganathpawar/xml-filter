@@ -6,7 +6,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -89,7 +88,7 @@ public class CanonicalFrame {
 			try {
 				if (!textPath.getText().isEmpty() && !textId.getText().isEmpty()) {
 					label.setText("Wait... It's Fetching Data From Canonical .");
-					JOptionPane.showMessageDialog(frame, "Wait... It's Fetching Data From Canonical .");
+					JOptionPane.showMessageDialog(frame, "Do you want continue?.");
 					Element element = readXML.getNodeDetailsById(textPath.getText(), textId.getText(),
 							typeList.getSelectedItem().toString());
 					txtArea.setText(element.asXML());
@@ -110,7 +109,7 @@ public class CanonicalFrame {
 			try {
 				if ( ! textPath.getText ( ).isEmpty ( ) && ! textId.getText ( ).isEmpty ( ) && ! txtArea.getText ( ).isEmpty ( ) ) {
 					label.setText ( "Wait... It's Updating Details into Canonical." );
-					JOptionPane.showMessageDialog ( frame , "Wait... It's Updating Details into Canonical." );
+					JOptionPane.showMessageDialog ( frame , "Do you want continue?." );
 					readXML.replaceNode ( txtArea.getText ( ) , textPath.getText ( ) , textId.getText ( ) ,
 							typeList.getSelectedItem ( ).toString ( ) );
 					JOptionPane.showMessageDialog ( frame , "Details Updated successfully" );

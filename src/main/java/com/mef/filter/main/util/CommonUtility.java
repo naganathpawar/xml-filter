@@ -118,13 +118,13 @@ public class CommonUtility {
     }
 
     /**
-     * @param folderPath
+     * @param folderPath\
      * @return
      */
     private String createDirectory ( @NotNull String folderPath ) {
-
-        if ( new File ( folderPath ).mkdir ( ) ) return folderPath;
-        else return null;
-
+        if ( new File ( folderPath ).mkdir ( ) )
+            return folderPath;
+        else
+            return null;
     }
 }

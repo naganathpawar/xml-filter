@@ -221,9 +221,7 @@ public class ReadXMLImpl implements ReadXML {
 		Document document = reader.read(inputFile);
 		String newFolder = commonUtility.createFolder(commonUtility.getPath(filePath), "BundleFolder");
 		removeAllNamespaces(document);
-		for (String id : commonUtility.getIds(ids)) {
-			files.addAll(getFileDetails(newFolder, id, document));
-		}
+		for (String id : commonUtility.getIds(ids)) files.addAll ( getFileDetails ( newFolder , id , document ) );
 		return files;
 	}
 

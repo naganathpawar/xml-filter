@@ -55,7 +55,7 @@ k
 ;src/main/java/com/mef/filter/main/config/AppProperties.java,d/a/dad6857b4bc8ae2be576c99fdfe309f1fc13a265
 Y
 )src/main/resources/application.properties,0/6/06f65155ec73600b9fc5c4dc2883d4bb84d8e284
-U
-%target/classes/application.properties,b/b/bb173f9557479135e0f1bcd9c6c5f7b4ae5f77e8
 f
 6src/test/java/com/mef/filter/main/SearchFrameTest.java,b/e/be47668351869157ffd9f822b30d892037d744f8
+>
+MEF-Filter.iml,e/4/e47111aab1235f1e9285b037aa0e57cd8d16e259
